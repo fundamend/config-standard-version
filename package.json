@@ -18,6 +18,10 @@
 	},
 	"license": "MIT",
 	"main": "src/index.js",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
 	"scripts": {
 		"clean": "rimraf *.log",
 		"clean:all": "yarn clean && rimraf node_modules",
