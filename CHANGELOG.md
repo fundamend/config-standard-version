@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/fundamend/fundamend/compare/@fundamend/config-standard-version@0.0.2...@fundamend/config-standard-version@0.0.3) (2021-04-16)
+
+### Bug Fixes
+
+- fix 'no semver tags found' error ([84c5732](https://github.com/fundamend/fundamend/commit/84c573228ebba1010249279e789c8fb4109a8e3a))
+
 ### 0.0.2 (2021-04-16)
 
 ### Features
