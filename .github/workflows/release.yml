@@ -29,7 +29,7 @@ jobs:
       - name: Tag
         if: steps.version.outputs.changed == 'true'
         shell: bash
-        run: 'git tag $npm_package_version && git push origin $npm_package_version'
+        run: git tag $npm_package_version && git push origin $npm_package_version
 
       - name: 'Configure NPM'
         if: steps.version.outputs.changed == 'true'
