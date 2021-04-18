@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/fundamend/fundamend/compare/@fundamend/config-standard-version@0.0.3...@fundamend/config-standard-version@0.0.4) (2021-04-18)
+
+### Bug Fixes
+
+- remove quotes from shell command ([1a9b3cf](https://github.com/fundamend/fundamend/commit/1a9b3cf84ce6fe6e7e87962f54f19e48b0a33987))
+
 ### [0.0.3](https://github.com/fundamend/fundamend/compare/@fundamend/config-standard-version@0.0.2...@fundamend/config-standard-version@0.0.3) (2021-04-16)
 
 ### Bug Fixes
