@@ -28,8 +28,22 @@ jobs:
 
       - name: Tag
         if: steps.version.outputs.changed == 'true'
+        uses: fundamend/action-github-tag@main
+        with:
+          tag: ${{ steps.version.outputs.version }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Create GitHub Release
+        if: steps.version.outputs.changed == 'true'
         shell: bash
-        run: git tag $npm_package_version && git push origin $npm_package_version
+        env:
+          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: 'npx conventional-github-releaser --preset conventionalcommits'
 
       - name: 'Configure NPM'
         if: steps.version.outputs.changed == 'true'
@@ -40,10 +54,3 @@ jobs:
         if: steps.version.outputs.changed == 'true'
         shell: bash
         run: npm publish
-
-      - name: Create GitHub Release
-        if: steps.version.outputs.changed == 'true'
-        shell: bash
-        env:
-          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.github-token }}
-        run: 'npx conventional-github-releaser --preset angular'
