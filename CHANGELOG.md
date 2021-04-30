@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/fundamend/fundamend/compare/@fundamend/config-standard-version@0.0.4...@fundamend/config-standard-version@0.0.5) (2021-04-30)
+
 ### [0.0.4](https://github.com/fundamend/fundamend/compare/@fundamend/config-standard-version@0.0.3...@fundamend/config-standard-version@0.0.4) (2021-04-18)
 
 ### Bug Fixes
