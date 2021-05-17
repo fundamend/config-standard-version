@@ -1,6 +1,6 @@
 {
 	"name": "@fundamend/config-standard-version",
-	"version": "0.0.5",
+	"version": "0.1.0",
 	"devDependencies": {
 		"@fundamend/config-eslint": "*",
 		"@fundamend/config-lint-staged": "*",
