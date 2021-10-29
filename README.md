@@ -20,7 +20,7 @@ In your [.versionrc.js], import _config-standard-version_ and spread it into the
 const config = require('@fundamend/config-standard-version');
 
 module.exports = {
-	...config,
+	...config
 };
 ```
 
@@ -31,7 +31,7 @@ const config = require('@fundamend/config-standard-version');
 
 module.exports = {
 	...config,
-	dryRun: true,
+	dryRun: true
 };
 ```
 
